@@ -7,6 +7,9 @@ from utils import Media
 
 logger = logging.getLogger(__name__)
 
+chan = 'https://t.me/moviedhamaka11'
+
+group = 'https://t.me/movie_request3'
 
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
@@ -18,9 +21,9 @@ async def start(bot, message):
             InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Go Inline', switch_inline_query=''),
         ],[
-            InlinekeyboardButton('Updates Channel', url='https://t.me/moviedhamaka11')
+            InlinekeyboardButton('Updates Channel', url=chan)
         ],[    
-            InlinekeyboardButton('Support Group', url='https://t.me/movie_request3')
+            InlinekeyboardButton('Support Group', url=group)
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
