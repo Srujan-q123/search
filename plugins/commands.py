@@ -19,6 +19,7 @@ async def start(bot, message):
             InlineKeyboardButton('Go Inline', switch_inline_query=''),
         ],[
             InlinekeyboardButton('Updates Channel', url='https://t.me/moviedhamaka11')
+        ],[    
             InlinekeyboardButton('Support Group', url='https://t.me/movie_request3')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
