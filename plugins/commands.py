@@ -21,8 +21,7 @@ async def start(bot, message):
             InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Go Inline', switch_inline_query=''),
         ],[
-            InlinekeyboardButton('Updates Channel', url=chan)
-        ],[    
+            InlinekeyboardButton('Updates Channel', url=chan),
             InlinekeyboardButton('Support Group', url=group)
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
